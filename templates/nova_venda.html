@@ -1,0 +1,23 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<div class="card p-4 mx-auto" style="max-width: 400px;">
+  <h4 class="mb-3"><i class="bi bi-cash-coin"></i> Nova Venda</h4>
+  <form method="post">
+    <div class="mb-3">
+      <label class="form-label">Produto</label>
+      <select class="form-select" name="produto" required>
+        {% for item in estoque %}
+          <option value="{{item.nome}}">{{item.nome}} ({{item.quantidade}})</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Quantidade</label>
+      <input class="form-control" type="number" name="quantidade" min="1" required>
+    </div>
+    <button class="btn btn-primary" type="submit">Registrar venda</button>
+    <a href="/" class="btn btn-link">Cancelar</a>
+  </form>
+</div>
+{% endblock %}

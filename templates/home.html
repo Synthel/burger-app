@@ -1,0 +1,43 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<div class="d-flex flex-column align-items-center" style="gap: 2rem;">
+  <div>
+    {% include "logo.html" %}
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-3 w-100">
+    <div class="col">
+      <a href="/nova-venda" class="card anotaai-card text-decoration-none text-dark h-100">
+        <div class="card-body text-center">
+          <i class="bi bi-cash-coin card-icon" style="color: #7950F2;"></i>
+          <h5 class="card-title">Nova Venda</h5>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="/produtos" class="card anotaai-card text-decoration-none text-dark h-100">
+        <div class="card-body text-center">
+          <i class="bi bi-box-seam card-icon" style="color: #FFA940;"></i>
+          <h5 class="card-title">Estoque</h5>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="/novo-produto" class="card anotaai-card text-decoration-none text-dark h-100">
+        <div class="card-body text-center">
+          <i class="bi bi-plus-circle card-icon" style="color: #51CF66;"></i>
+          <h5 class="card-title">Novo Produto</h5>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="/vendas" class="card anotaai-card text-decoration-none text-dark h-100">
+        <div class="card-body text-center">
+          <i class="bi bi-list-columns-reverse card-icon" style="color: #FF8787;"></i>
+          <h5 class="card-title">Vendas</h5>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}
