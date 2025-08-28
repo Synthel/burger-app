@@ -1,7 +1,3 @@
-# Flask Anotações Simples
-
-Aplicação Flask de exemplo para anotações simples.
-
 ## 🚀 Como rodar o projeto
 
 ### 1. Acesse a pasta do projeto
